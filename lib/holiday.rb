@@ -83,7 +83,7 @@ def all_supplies_in_holidays(holiday_hash)
     holidays.each do |holiday, supplies|
       holiday_name = holiday.to_s.split("_").join(" ").capitalize
       if holiday_name.split(" ").length > 1
-        tempoary_name = hoilday_name.split(" ")
+        tempoary_name = holiday_name.split(" ")
         tempoary_name.map do |individual_word|
           holiday_name_array << individual_word.capitalize!
           binding.pry
