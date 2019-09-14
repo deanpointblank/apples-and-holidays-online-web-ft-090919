@@ -85,10 +85,10 @@ def all_supplies_in_holidays(holiday_hash)
         tempoary_name = holiday_name.split(" ")
         tempoary_name.map do |individual_word|
           individual_word.capitalize!
-          binding.pry
         end
         holiday_name = tempoary_name.join(" ")
       end
+      binding.pry
       #formatted_holiday_name = holiday_name
       puts "  #{holiday_name}: #{supplies.join(", ")}"
     end
