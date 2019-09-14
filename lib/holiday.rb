@@ -88,7 +88,6 @@ def all_supplies_in_holidays(holiday_hash)
         end
         holiday_name = tempoary_name.join(" ")
       end
-      binding.pry
       #formatted_holiday_name = holiday_name
       puts "  #{holiday_name}: #{supplies.join(", ")}"
     end
