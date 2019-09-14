@@ -81,6 +81,7 @@ def all_supplies_in_holidays(holiday_hash)
     puts "#{seasons.to_s.capitalize}:"
     holidays.each do |holiday, supplies|
       holiday_name = holiday.to_s.split("_").join(" ").capitalize
+      binding.pry
       if holiday_name.split(" ").length > 1
         holiday_name_array = []
         holiday_name.split(" ").each do |individual_word|
@@ -89,7 +90,6 @@ def all_supplies_in_holidays(holiday_hash)
         holiday_name = holiday_name_array.join(" ")
       end
       #formatted_holiday_name = holiday_name
-      binding.pry
       puts "  #{holiday_name}: #{supplies.join(", ")}"
     end
   end
